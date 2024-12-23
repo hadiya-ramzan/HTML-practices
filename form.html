@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="form style.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Equiry form</legend>
+    <form method="" action="">
+        <label for="name">Username</label>
+    <input type="text" id="name" pattern="[a-zA-Z ]{3,40}" placeholder="Enter your username" title="Please, enter your valid username" name="username" required> <br/>
+        <label for="Password">Password</label>
+    <input type="Password" id="Password" pattern="[0-9]{4,20}" placeholder="Enter your password" title="Please, enter your valid password" name="Password" required> <br/>
+        <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your email" name="email" title="Please, enter your valid email" required> <br/>
+        <label for="phone">Phone</label>
+    <input type="tel" id="phone" pattern="[0-9]{11}" placeholder="Enter your phone no." name="phone" title="Please, enter your valid phone number" required> <br/>
+        <label for="selection">Select your country</label>
+        <select id="selection" required>
+            <option>None</option>
+            <option>Islamabad</option>
+            <option>Lahore</option>
+            <option>Karachi</option>
+    </select><br/>
+    <label>Select Gender</label>
+        <input type="radio"  value="Male" name="gender">Male
+        <input type="radio"  value="Female" name="gender">Female 
+        <input type="radio"  value="Other" name="gender">Other 
+        <br/>
+        <br/>
+        <label>Which  language you want to learn?</label>
+        <input type="checkbox" value="php" name="language">PHP
+        <input type="checkbox" value="C#" name="language">C#
+        <input type="checkbox" value="C++" name="language">C++
+        <input type="checkbox" value="Java" name="language">JAVA  <br/>
+        <br/>
+    <label for="submit">Do you want to submit form?</label>
+    <button>Submit</button>
+    </form>
+</fieldset>
+</body>
+</html>
